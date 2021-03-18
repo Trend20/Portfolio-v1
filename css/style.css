@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +8,16 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    background: url(../img/bg9.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 }
 
 .container{
     display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     width: 100%;
 }
@@ -25,8 +32,115 @@ header{
 
 .logo{
     display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    width: 70%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul li{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 900;
+    font-size: .8rem;
+    /* text-transform: uppercase; */
+    /* color: rgb(17, 9, 87); */
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color: rgb(180, 70, 70);
+}
+.toggle{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle i{
+    font-size: 2rem;
+}
+
+
+/* end of header styles */
+
+/* intro */
+
+.intro{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-text{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.intro-text h3{
+    display: flex;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    width: 100%;
+    opacity: .8;
+}
+
+.intro-text p{
+    font-size: 1.5rem;
+    width: 80%;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .8;
+}
+
+.avatar{
+    display: flex;
     width: 30%;
     justify-content: center;
     align-items: center;
 }
 
+.avatar img{
+    max-width: 80%;
+    border: none;
+    border-radius: 50%;
+}
+/* end of intro styles */
+
+/* skills */
+
+
+/* end of skills */
