@@ -11,6 +11,10 @@
     __themeTextColor: rgb(226, 55, 55);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: rgb(4, 8, 26);
@@ -220,6 +224,27 @@ nav ul li a:hover {
     color: rgb(226, 55, 55);
     font-size: 2rem;
     font-weight: 300;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: rgb(226, 55, 55);
+    cursor: pointer;
+}
+
+.skill i {
+    padding: 20px;
+    font-size: 3rem;
 }
 
 
