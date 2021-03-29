@@ -1,37 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     __themeTextColor: rgb(226, 55, 55);
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background: rgb(4, 8, 26);
     color: #fff;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     width: 100%;
 }
 
-header{
+header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+.logo {
     display: flex;
     width: 8%;
     justify-content: center;
@@ -41,27 +41,27 @@ header{
     cursor: pointer;
 }
 
-.logo h1{
+.logo h1 {
     display: flex;
     font-weight: 400;
     font-size: 1rem;
 }
 
-nav{
+nav {
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
     width: 60%;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     display: flex;
     width: 20%;
@@ -70,11 +70,11 @@ nav ul li{
 }
 
 nav ul li.active,
-nav ul li:hover{
+nav ul li:hover {
     border-bottom: 1px solid rgb(226, 55, 55);
 }
 
-nav ul li a{
+nav ul li a {
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -86,10 +86,11 @@ nav ul li a{
     opacity: .6;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(180, 70, 70);
 }
-.toggle{
+
+.toggle {
     display: flex;
     position: absolute;
     top: 5%;
@@ -98,11 +99,11 @@ nav ul li a:hover{
     display: none;
 }
 
-.toggle i{
+.toggle i {
     font-size: 2rem;
 }
 
-#header-line{
+#header-line {
     opacity: .05;
     color: rgb(233, 233, 233);
     width: 100%;
@@ -110,11 +111,14 @@ nav ul li a:hover{
     justify-content: flex-end;
     margin-left: 102px;
 }
+
+
 /* end of header styles */
+
 
 /* intro styles */
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -123,27 +127,100 @@ nav ul li a:hover{
     width: 100%;
 }
 
-.intro hr{
+.intro hr {
     width: 5%;
     margin-left: 0;
     opacity: .5;
     border: 1px solid rgb(226, 55, 55);
 }
 
-.intro h3{
+.intro h3 {
     margin-top: 20px;
     font-size: 2.5rem;
     opacity: .8;
     font-weight: 300;
 }
-.intro h3 b{
+
+.intro h3 b {
     color: rgb(226, 55, 55);
     opacity: 1;
     font-weight: 400;
 }
 
-.intro p{
+.intro p {
     font-size: 2rem;
     margin-top: 5px;
 }
+
+
 /* end of intro styles */
+
+
+/* about styles */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.head h1 {
+    font-size: 4rem;
+    color: rgb(129, 129, 129);
+    text-transform: uppercase;
+    opacity: .1;
+    position: relative;
+}
+
+.head p {
+    display: flex;
+    position: absolute;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.head p span {
+    width: 10%;
+    border: 1px solid rgb(226, 55, 55);
+    margin-right: 30px;
+}
+
+#description {
+    display: flex;
+    margin-left: 90px;
+    margin-top: 30px;
+    width: 60%;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 90px;
+    width: 100%;
+}
+
+.skills h3 {
+    display: flex;
+    color: rgb(226, 55, 55);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+/* end of about styles */
