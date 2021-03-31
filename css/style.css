@@ -248,7 +248,67 @@
         padding: 100px;
     }
     
-    #form {}
+    #form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 200px;
+        margin-top: 50px;
+        color: #fff;
+    }
+    
+    .input-field {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .input-field input {
+        padding: 20px;
+        outline: none;
+        border: 2px solid rgb(226, 55, 55);
+        background: transparent;
+        width: 100%;
+        margin-left: 20px;
+        color: #fff;
+        opacity: .6;
+        font-size: 1rem;
+    }
+    
+    .input-field input::placeholder {
+        color: #fff;
+        opacity: .6;
+    }
+    
+    #message {
+        display: flex;
+        margin-top: 30px;
+        border: 2px solid rgb(226, 55, 55);
+        background: transparent;
+        padding: 10px;
+        outline: none;
+        color: #fff;
+        opacity: .6;
+        width: 98%;
+    }
+    
+    .form-btn {
+        padding: 20px;
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        background: rgb(226, 55, 55);
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: .9rem;
+        margin-top: 20px;
+        font-weight: 700;
+    }
     /* end of contact us section */
     /* chevron styles */
     
