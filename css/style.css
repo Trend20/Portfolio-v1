@@ -277,6 +277,29 @@
     .work img {
         max-width: 100%;
     }
+    
+    .project-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: auto;
+        margin-top: 50px;
+        width: 20%;
+        outline: none;
+        border-radius: 50px;
+        border: 2px solid rgb(226, 55, 55);
+        text-decoration: none;
+        background: #fff;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    
+    .project-btn:hover {
+        background: rgb(226, 55, 55);
+        color: #fff;
+    }
     /* end of project styles */
     /* contact us section */
     
