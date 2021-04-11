@@ -156,6 +156,28 @@
         font-size: 2rem;
         margin-top: 5px;
     }
+    
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 50px;
+        width: 20%;
+        outline: none;
+        border-radius: 50px;
+        border: 2px solid rgb(226, 55, 55);
+        text-decoration: none;
+        background: rgb(226, 55, 55);
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    
+    .btn:hover {
+        color: rgb(226, 55, 55);
+        background: #fff;
+    }
     /* end of intro styles */
     /* about styles */
     
@@ -366,10 +388,17 @@
         background: rgb(226, 55, 55);
         border: none;
         color: #fff;
+        border: 2px solid rgb(226, 55, 55);
         cursor: pointer;
         font-size: .9rem;
+        outline: none;
         margin-top: 20px;
         font-weight: 700;
+    }
+    
+    .form-btn:hover {
+        background: #fff;
+        color: #000;
     }
     /* end of contact us section */
     /* footer section */
@@ -391,11 +420,16 @@
         width: 20%;
     }
     
+    .social-link a {
+        text-decoration: none;
+    }
+    
     .social-link i {
         display: flex;
         box-shadow: 10px 10px 10px rgb(0, 2, 7);
         padding: 20px;
         cursor: pointer;
+        color: #fff;
     }
     /* end of feooter */
     /* chevron styles */
