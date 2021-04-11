@@ -21,6 +21,11 @@
         color: #fff;
     }
     
+    b {
+        color: rgb(226, 55, 55);
+        font-weight: 300;
+    }
+    
     .container {
         display: flex;
         flex-direction: column;
@@ -195,7 +200,7 @@
     }
     
     #description {
-        display: flex;
+        /* display: flex; */
         margin-left: 90px;
         margin-top: 30px;
         width: 60%;
@@ -239,6 +244,40 @@
         font-size: 3rem;
     }
     /* end of about styles */
+    /* project styles */
+    
+    #project {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 100px;
+    }
+    
+    #project h3 {
+        margin-left: 70px;
+        margin-top: 70px;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .project-container {
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-left: 70px;
+        grid-gap: 30px;
+    }
+    
+    .work {
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .work img {
+        max-width: 100%;
+    }
+    /* end of project styles */
     /* contact us section */
     
     #contact-us {
