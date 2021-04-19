@@ -17,3 +17,8 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// projects hover
+const workContainers = document.querySelectorAll('.work');
+const workDescription = document.querySelectorAll('.work-description');

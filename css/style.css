@@ -201,7 +201,7 @@
         font-size: 4rem;
         color: rgb(129, 129, 129);
         text-transform: uppercase;
-        opacity: .1;
+        opacity: .3;
         position: relative;
     }
     
@@ -294,12 +294,13 @@
     .work {
         width: 100%;
         cursor: pointer;
+        position: relative;
+        border-radius: 10px;
     }
     
     .work img {
         max-width: 100%;
     }
-    
     .project-btn {
         display: flex;
         justify-content: center;
@@ -321,6 +322,54 @@
     .project-btn:hover {
         background: rgb(226, 55, 55);
         color: #fff;
+    }
+
+    .work-description{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(16, 25, 70);
+        display: none;
+    }
+
+    .work-description p{
+        width: 50%;
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+
+    .work-description a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: auto;
+        margin-top: 20px;
+        width: 40%;
+        outline: none;
+        border-radius: 50px;
+        border: 2px solid rgb(226, 55, 55);
+        text-decoration: none;
+        background: #fff;
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 700;
+    }
+
+    .work-description a:hover{
+        background: rgb(226, 55, 55);
+        color: #fff;
+    }
+
+    .work-description a i{
+        margin-left: 20px;
     }
     /* end of project styles */
     /* contact us section */
