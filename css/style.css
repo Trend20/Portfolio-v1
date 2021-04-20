@@ -29,7 +29,7 @@
     .container {
         display: flex;
         flex-direction: column;
-        overflow-x: hidden;
+        overflow: hidden;
         width: 100%;
     }
     
@@ -130,6 +130,7 @@
         padding-top: 200px;
         margin-left: 200px;
         width: 100%;
+        overflow: hidden;
     }
     
     .intro hr {

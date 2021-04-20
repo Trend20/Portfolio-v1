@@ -10,6 +10,9 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- FONTAWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
 
@@ -44,7 +47,7 @@
 
         <!-- intro section -->
 
-        <div class="intro">
+        <div class="intro" data-aos="fade-up">
 
             <hr>
             <h3>Hi, my name is <b>Enock Omondi</b> </h3>
@@ -55,7 +58,7 @@
 
         <!-- about section -->
 
-        <div id="about">
+        <div id="about" data-aos="fade-left">
             <div class="head">
                 <h1>About Me</h1>
                 <p>
@@ -102,7 +105,7 @@
         <!-- end of about section -->
 
         <!-- projects section -->
-        <div id="project">
+        <div id="project" data-aos="fade-right">
             <div class="head">
                 <h1>Projects</h1>
                 <p>
@@ -162,7 +165,7 @@
         <!-- end of project section -->
 
         <!-- contact us section -->
-        <div id="contact-us">
+        <div id="contact-us" data-aos="fade-down">
             <div class="head">
                 <h1>Hire Me</h1>
                 <p>
@@ -183,7 +186,7 @@
 
         <!-- footer section -->
 
-        <div id="footer">
+        <div id="footer" data-aos="fade-up">
             <!-- <h3>Connect</h3> -->
             <div class="social-link">
                 <a href="https://www.facebook.com/enock.omondi.1291" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -198,6 +201,16 @@
         <!-- chavron btn -->
         <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-up"></i></button>
         <!-- end of chevron -->
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+            offset: 400,
+            duration: 1000,
+        });
+        </script>
 
         <!-- MAIN JS -->
         <script src="./js/main.js"></script>
