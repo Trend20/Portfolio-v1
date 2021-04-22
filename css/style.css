@@ -175,9 +175,15 @@
         font-weight: 400;
     }
     
-    .intro p {
-        font-size: 2rem;
+    .intro >p {
+        font-size: 1.5rem;
+        opacity: .8;
         margin-top: 5px;
+    }
+
+    #role{
+        font-size: .9rem;
+        margin-top: 10px;
     }
     
     .btn {
@@ -195,7 +201,9 @@
         text-transform: uppercase;
         font-size: .9rem;
         font-weight: 600;
+        transition: 1s all ease;
     }
+
     
     .btn:hover {
         color: rgb(226, 55, 55);
@@ -247,9 +255,10 @@
     #description {
         /* display: flex; */
         margin-left: 90px;
-        margin-top: 30px;
+        margin-top: 50px;
         width: 60%;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        line-height: 2;
         font-weight: 300;
     }
     
@@ -499,6 +508,7 @@
     .social-link i {
         display: flex;
         box-shadow: 10px 10px 10px rgb(0, 2, 7);
+        background: transparent;
         padding: 20px;
         cursor: pointer;
         color: #fff;
