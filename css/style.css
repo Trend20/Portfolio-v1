@@ -8,7 +8,8 @@
     }
     
      :root {
-        __themeTextColor: rgb(226, 55, 55);
+        __themeTextColor: rgb(231, 37, 37);
+        --universalColor: #ff0000;
     }
     
     html {
@@ -22,14 +23,14 @@
     }
     
     b {
-        color: rgb(226, 55, 55);
+        color: rgb(231, 42, 42);
         font-weight: 300;
     }
     
     .container {
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        overflow-x: hidden;
         width: 100%;
     }
     
@@ -73,9 +74,31 @@
     nav ul li {
         list-style: none;
         display: flex;
-        width: 20%;
         align-items: center;
         justify-content: center;
+    }
+
+    #resume{
+        display: flex;
+        border: 1px solid var(--universalColor);
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 30%;
+    }
+
+    .resume:hover{
+        background:  rgb(18, 25, 54);
+    }
+
+    #resume a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        color: var(--universalColor);
     }
     
     nav ul li.active,
@@ -130,7 +153,6 @@
         padding-top: 200px;
         margin-left: 200px;
         width: 100%;
-        overflow: hidden;
     }
     
     .intro hr {
