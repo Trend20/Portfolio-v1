@@ -644,6 +644,103 @@ nav ul li a:hover {
 .work-description a i {
 	margin-left: 20px;
 }
+
+@media screen and (max-width: 768px) {
+	#project {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 30px;
+	}
+
+	#project h3 {
+		margin-left: 0px;
+		margin-top: 20px;
+		font-size: 2rem;
+	}
+
+	.project-container {
+		display: grid;
+		margin-top: 20px;
+		grid-template-columns: 1fr;
+		margin-left: 0px;
+		grid-gap: 20px;
+	}
+
+	.work {
+		width: 100%;
+		cursor: pointer;
+		position: relative;
+		border-radius: 10px;
+	}
+
+	.work img {
+		max-width: 100%;
+	}
+	.project-btn {
+		display: flex;
+		padding: 20px;
+		margin: auto;
+		margin-top: 20px;
+		width: 180px;
+		text-transform: uppercase;
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+
+	.project-btn:hover {
+		background: rgb(226, 55, 55);
+		color: #fff;
+	}
+
+	.work-description {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgb(16, 25, 70);
+		display: none;
+	}
+
+	.work-description p {
+		width: 50%;
+		font-size: 1rem;
+		margin-top: 50px;
+	}
+
+	.work-description a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		margin: auto;
+		margin-top: 20px;
+		width: 40%;
+		outline: none;
+		border-radius: 50px;
+		border: 2px solid rgb(226, 55, 55);
+		text-decoration: none;
+		background: #fff;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		font-weight: 700;
+	}
+
+	.work-description a:hover {
+		background: rgb(226, 55, 55);
+		color: #fff;
+	}
+
+	.work-description a i {
+		margin-left: 20px;
+	}
+}
 /* end of project styles */
 /* contact us section */
 
@@ -721,6 +818,62 @@ nav ul li a:hover {
 .form-btn:hover {
 	background: #fff;
 	color: #000;
+}
+
+@media screen and (max-width: 768px) {
+	#contact-us {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 30px;
+	}
+
+	#form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0px;
+		margin-top: 20px;
+		color: #fff;
+	}
+
+	.input-field {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.input-field input {
+		padding: 20px;
+		width: 100%;
+		margin-left: 0px;
+		margin-top: 10px;
+		color: #fff;
+	}
+
+	#message {
+		display: flex;
+		margin-top: 10px;
+		border: 2px solid rgb(226, 55, 55);
+		background: transparent;
+		padding: 10px;
+		outline: none;
+		color: #fff;
+		opacity: 0.6;
+		width: 100%;
+	}
+
+	.form-btn {
+		padding: 20px;
+		display: flex;
+		width: 50%;
+		margin-top: 10px;
+		font-weight: 400;
+	}
 }
 /* end of contact us section */
 /* footer section */
