@@ -411,6 +411,133 @@ nav ul li a:hover {
 	padding: 20px;
 	font-size: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+	.intro {
+		display: flex;
+		padding-top: 150px;
+		margin-left: 30px;
+	}
+
+	.intro hr {
+		width: 50px;
+		margin-left: 0;
+		opacity: 0.5;
+		border: 1px solid rgb(226, 55, 55);
+	}
+
+	.intro h3 {
+		margin-top: 20px;
+		font-size: 1.5rem;
+		width: 80%;
+		opacity: 0.6;
+		font-weight: 300;
+	}
+
+	.intro h3 b {
+		color: rgb(226, 55, 55);
+		opacity: 1;
+		font-weight: 300;
+	}
+
+	.intro > p {
+		font-size: 1.2rem;
+		opacity: 0.6;
+	}
+
+	#role {
+		margin-top: 10px;
+	}
+
+	.btn {
+		display: flex;
+		padding: 20px;
+		margin-top: 30px;
+		width: 200px;
+	}
+
+	.btn:hover {
+		color: rgb(226, 55, 55);
+		background: #fff;
+	}
+	/* end of intro styles */
+
+	/* about styles */
+
+	#about {
+		display: flex;
+		width: 100%;
+		padding: 30px;
+	}
+
+	.head {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+	}
+
+	.head h1 {
+		font-size: 3rem;
+		color: rgb(129, 129, 129);
+		text-transform: uppercase;
+	}
+
+	.head p {
+		display: flex;
+		width: 70%;
+	}
+
+	.head p span {
+		width: 30%;
+		border: 1px solid rgb(226, 55, 55);
+		margin-right: 10px;
+	}
+
+	#description {
+		/* display: flex; */
+		margin-left: 0px;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.skills {
+		display: flex;
+		margin-top: 20px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.skills h3 {
+		display: flex;
+		color: rgb(226, 55, 55);
+		font-size: 1.2rem;
+		font-weight: 300;
+	}
+
+	.skills-container {
+		display: grid;
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		margin-top: 20px;
+	}
+
+	.skill {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		background: rgb(226, 55, 55);
+		cursor: pointer;
+	}
+
+	.skill i {
+		padding: 10px;
+		font-size: 2rem;
+	}
+}
 /* end of about styles */
 /* project styles */
 
