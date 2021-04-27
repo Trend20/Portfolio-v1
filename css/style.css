@@ -907,6 +907,35 @@ nav ul li a:hover {
 	cursor: pointer;
 	color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+	#footer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 0px;
+	}
+
+	.social-link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0px 0px;
+		width: 50%;
+		margin-left: -40px;
+	}
+
+	.social-link i {
+		display: flex;
+		box-shadow: 10px 10px 10px rgb(0, 0, 2);
+		background: transparent;
+		padding: 20px;
+		cursor: pointer;
+		color: #fff;
+	}
+}
 /* end of feooter */
 /* chevron styles */
 
@@ -925,9 +954,8 @@ nav ul li a:hover {
 	z-index: 99;
 	font-size: 1.2rem;
 	color: #fff;
-	padding: 20px;
+	padding: 20px 22px;
 	transition: ease 0.5s;
-	width: 5%;
 }
 
 #myBtn:hover {
@@ -936,9 +964,8 @@ nav ul li a:hover {
 
 @media screen and (max-width: 991px) {
 	#myBtn {
-		padding: 15px;
+		padding: 20px 22px;
 		transition: ease 0.5s;
-		width: 12%;
 	}
 }
 /* end if chevron */
