@@ -556,6 +556,12 @@ nav ul li a:hover {
 	font-weight: 400;
 }
 /* main projects */
+#main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 100px 20px;
+}
 /* end of main projects */
 
 /* other projects */
