@@ -555,11 +555,14 @@ nav ul li a:hover {
 	font-size: 3rem;
 	font-weight: 400;
 }
+/* main projects */
+/* end of main projects */
 
+/* other projects */
 .project-container {
 	display: grid;
 	margin-top: 50px;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
 	margin-left: 70px;
 	grid-gap: 30px;
@@ -602,19 +605,19 @@ nav ul li a:hover {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	position: absolute;
 	top: 0;
 	left: 0;
 	background: rgb(16, 25, 70);
-	display: none;
+	padding: 20px 0px;
 }
 
 .work-description p {
-	width: 50%;
+	width: 100%;
+	padding: 0px 20px;
 	font-size: 1rem;
 	margin-top: 50px;
 }
@@ -626,7 +629,7 @@ nav ul li a:hover {
 	padding: 20px;
 	margin: auto;
 	margin-top: 20px;
-	width: 40%;
+	width: 50%;
 	outline: none;
 	border-radius: 50px;
 	border: 2px solid rgb(226, 55, 55);
@@ -645,6 +648,8 @@ nav ul li a:hover {
 .work-description a i {
 	margin-left: 20px;
 }
+
+/* end of other projects */
 
 @media screen and (max-width: 768px) {
 	#project {
@@ -902,7 +907,7 @@ nav ul li a:hover {
 
 .social-link i {
 	display: flex;
-	box-shadow: 10px 10px 10px rgb(0, 2, 7);
+	box-shadow: 10px 10px 10px rgb(3, 3, 5);
 	background: transparent;
 	padding: 20px;
 	cursor: pointer;
