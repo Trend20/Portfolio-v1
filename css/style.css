@@ -563,6 +563,8 @@ nav ul li a:hover {
 	padding: 100px 20px;
 }
 
+/* first main project */
+
 #project-1 {
 	display: flex;
 	width: 100%;
@@ -627,6 +629,38 @@ nav ul li a:hover {
 	display: flex;
 	cursor: pointer;
 	font-size: 1.2rem;
+}
+
+/* end of project one style */
+
+#project-2 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+	width: 100%;
+}
+
+#project-text-2 {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	left: 15%;
+	position: absolute;
+}
+
+#project-text-2 > p {
+	width: 80%;
+	margin-top: 20px;
+	padding: 30px;
+	background: #ff0000;
+	border-radius: 5px;
+}
+
+#image-2 {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	width: 100%;
 }
 /* end of main projects */
 
