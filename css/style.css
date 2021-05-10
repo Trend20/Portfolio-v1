@@ -334,7 +334,7 @@ nav ul li a:hover {
 		display: flex;
 		padding-top: 30px;
 		margin-left: 30px;
-		margin-top: 20px;
+		margin-top: 50px;
 		width: 100%;
 		min-height: 50vh;
 	}
@@ -348,10 +348,10 @@ nav ul li a:hover {
 
 	.intro h3 {
 		margin-top: 20px;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		width: 80%;
 		opacity: 0.6;
-		font-weight: 300;
+		font-weight: 500;
 	}
 
 	.intro h3 b {
@@ -361,12 +361,13 @@ nav ul li a:hover {
 	}
 
 	.intro > p {
-		font-size: 1.2rem;
+		font-size: 2rem;
 		opacity: 0.6;
 	}
 
 	#role {
 		margin-top: 10px;
+		font-size: 1rem;
 	}
 
 	.btn {
