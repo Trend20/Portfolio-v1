@@ -151,14 +151,13 @@ nav ul li a:hover {
 /* responsive header */
 @media screen and (max-width: 768px) {
 	header nav {
-		/* display: none; */
 		position: absolute;
 		width: 80%;
-		height: 220px;
-		background: #fff;
+		height: 300px;
+		background: rgb(12, 25, 54);
 		left: -100%;
 		z-index: 99;
-		top: 120px;
+		top: 110px;
 		margin: 0px 30px;
 		transition: 0.5s;
 		border: 2px solid rgb(228, 16, 16);
@@ -168,7 +167,10 @@ nav ul li a:hover {
 	}
 	header nav,
 	header nav ul {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 		margin-top: 0px;
 	}
@@ -176,36 +178,37 @@ nav ul li a:hover {
 	header nav ul li {
 		display: flex;
 		padding: 10px;
-	}
-	nav ul li a {
-		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-	}
-	.connect {
-		display: flex;
 		width: 100%;
-		margin-top: 80px;
 	}
-	.connect a {
+
+	nav ul li.active,
+	nav ul li:hover {
+		border-bottom: none;
+	}
+
+	nav ul li a {
 		display: flex;
-		align-items: center;
 		text-decoration: none;
-		color: rgb(12, 25, 54);
-	}
-	#request {
-		padding: 10px;
-		width: 40%;
-		border: 1px solid rgb(219, 43, 43);
-		color: rgb(219, 43, 43);
-		background: none;
-		outline: none;
-		border-radius: 50px;
+		align-items: center;
+		font-weight: 300;
 		font-size: 1rem;
-		font-weight: 700;
-		cursor: pointer;
+		color: #fff;
+		transform: scaleY(4, 2);
+		margin-bottom: 10px;
+		opacity: 0.6;
+	}
+
+	nav ul li a:hover {
+		color: rgb(180, 70, 70);
+	}
+	#resume {
+		display: flex;
+		width: 70%;
 	}
 	.toggle {
+		top: 30%;
+		right: 5%;
 		display: block;
-		position: absolute;
 	}
 	.toggle i {
 		display: block;
