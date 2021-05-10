@@ -712,9 +712,9 @@ nav ul li a:hover {
 	}
 
 	#project h3 {
-		margin-left: 0px;
+		margin-left: 20px;
 		margin-top: 10px;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 500;
 	}
 	/* main projects */
@@ -920,9 +920,9 @@ nav ul li a:hover {
 		color: #fff;
 	}
 
-	#tech {
+	/* #tech {
 		margin-top: 30px;
-	}
+	} */
 
 	.work-description {
 		display: flex;
