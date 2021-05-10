@@ -122,7 +122,7 @@
                    <div id="project-text">
                        <h1>Softwer</h1>
                        <p>Softwer is a responsive web application which gives users an easy way to open bank accounts 
-                           online by following some simple steps.
+                           online by just registering. I built this from scratch.
                         </p>
                        <div id="technologies">
                            <p>React</p>
@@ -278,6 +278,10 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('.toggle').click(function() {
+                $('nav').toggleClass('active')
+            })
+
+            $('nav ul li a').click(function(){
                 $('nav').toggleClass('active')
             })
         })
