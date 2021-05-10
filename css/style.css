@@ -154,8 +154,8 @@ nav ul li a:hover {
 	}
 	header nav {
 		position: absolute;
-		width: 80%;
-		height: 400px;
+		width: 85%;
+		height: 500px;
 		background: rgb(12, 25, 54);
 		left: -100%;
 		z-index: 99;
