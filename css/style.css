@@ -147,114 +147,6 @@ nav ul li a:hover {
 
 /* responsive header */
 @media screen and (max-width: 768px) {
-	.container {
-		display: flex;
-		flex-direction: column;
-		overflow-x: hidden;
-		width: 100%;
-	}
-
-	header {
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		align-items: center;
-		position: fixed;
-		z-index: 1;
-	}
-
-	.logo {
-		display: flex;
-		width: 30px;
-		padding: 15px 30px 15px 30px;
-		cursor: pointer;
-	}
-
-	.logo h1 {
-		font-weight: 700;
-	}
-
-	nav {
-		display: none;
-		width: 100%;
-		align-items: center;
-		justify-content: center;
-		position: absolute;
-		flex-direction: column;
-		top: 70%;
-		left: 0%;
-		right: 0%;
-		background-color: rgb(226, 55, 55);
-	}
-
-	nav ul {
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding-bottom: 10px;
-	}
-
-	nav ul li {
-		list-style: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	#resume {
-		display: flex;
-		border: 2px solid var(--backgroundColor);
-		width: 80px;
-	}
-
-	.resume:hover {
-		background: rgb(18, 25, 54);
-	}
-
-	#resume a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 8px;
-		color: var(--backgroundColor);
-	}
-
-	nav ul li.active,
-	nav ul li:hover {
-		border-bottom: 1px solid rgb(10, 22, 63);
-	}
-
-	nav ul li a {
-		opacity: 1;
-	}
-
-	nav ul li a:hover {
-		color: rgb(180, 70, 70);
-	}
-
-	.toggle {
-		position: relative;
-		top: 0%;
-		margin-right: 10px;
-		right: 0%;
-		cursor: pointer;
-		display: block;
-	}
-
-	.toggle i {
-		font-size: 3rem;
-	}
-
-	#header-line {
-		opacity: 0.05;
-		color: rgb(233, 233, 233);
-		width: 100%;
-		display: flex;
-		justify-content: flex-end;
-		margin-left: 102px;
-	}
 }
 
 /* end of header styles */
@@ -438,9 +330,10 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
 	.intro {
 		display: flex;
-		padding-top: 150px;
+		padding-top: 30px;
 		margin-left: 30px;
-		margin-top: 150px;
+		margin-top: 20px;
+		width: 100%;
 	}
 
 	.intro hr {
@@ -541,7 +434,11 @@ nav ul li a:hover {
 	}
 	.skills-container {
 		display: flex;
-		margin-top: 50px;
+		margin-top: 20px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 
 	.skill {
@@ -649,6 +546,7 @@ nav ul li a:hover {
 	margin-top: 20px;
 	padding: 30px;
 	background: #ff0000;
+	opacity: 0.5;
 	border-radius: 5px;
 }
 
@@ -802,21 +700,183 @@ nav ul li a:hover {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 30px;
+		padding: 10px;
 	}
 
 	#project h3 {
 		margin-left: 0px;
-		margin-top: 20px;
+		margin-top: 10px;
 		font-size: 2rem;
+		font-weight: 500;
+	}
+	/* main projects */
+	#main {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 20px 0px;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
 	}
 
+	/* first main project */
+
+	#project-1 {
+		display: flex;
+		width: 100%;
+		padding: 20px;
+		margin-top: 10px;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.project-img {
+		display: flex;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.project-img img {
+		display: flex;
+		max-width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+	#project-text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 20px;
+		align-items: center;
+		margin-left: 0px;
+		position: relative;
+		left: 0;
+		right: 0;
+		height: auto;
+		background: rgb(16, 25, 70);
+		opacity: 1;
+		color: #fff !important;
+		z-index: 1;
+	}
+
+	#project-text h1,
+	#project-text-2 h1 {
+		opacity: 1;
+		display: flex;
+		font-size: 1.5rem;
+	}
+
+	#project-text > p {
+		width: 100%;
+		margin-top: 10px;
+		padding: 0px;
+		opacity: 1;
+		background: none;
+		border-radius: 5px;
+		font-size: 0.9rem;
+	}
+
+	#technologies {
+		display: flex;
+		margin-top: 10px;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	#technologies p {
+		font-size: 0.8rem;
+		opacity: 0.5;
+	}
+	#project-buttons {
+		display: flex;
+		margin-top: 20px;
+		width: 20%;
+		justify-content: space-between;
+	}
+
+	#project-buttons a {
+		color: #fff;
+		text-decoration: none;
+		display: flex;
+		cursor: pointer;
+		font-size: 1.2rem;
+	}
+
+	/* end of project one style */
+
+	#project-2 {
+		display: flex;
+		width: 100%;
+		padding: 20px;
+		margin-top: 10px;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
+	#project-text-2 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 20px;
+		align-items: center;
+		margin-left: 0px;
+		position: relative;
+		left: 0;
+		right: 0;
+		height: auto;
+		background: rgb(16, 25, 70);
+		opacity: 1;
+		color: #fff !important;
+		z-index: 1;
+	}
+
+	#project-text-2 > p {
+		width: 100%;
+		margin-top: 20px;
+		padding: 0px;
+		font-size: 0.9rem;
+		background: none;
+		border-radius: 5px;
+	}
+
+	#image-2 {
+		display: flex;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	#image-2 img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0px;
+		display: flex;
+		max-width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+	/* end of main projects */
+
+	/* other projects */
 	.project-container {
 		display: grid;
-		margin-top: 20px;
-		grid-template-columns: 1fr;
+		margin-top: 30px;
+		grid-template-columns: repeat(1, 1fr);
+		width: 100%;
 		margin-left: 0px;
-		grid-gap: 20px;
+		grid-gap: 30px;
+	}
+
+	.project-container > h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
 	}
 
 	.work {
@@ -831,10 +891,17 @@ nav ul li a:hover {
 	}
 	.project-btn {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		padding: 20px;
 		margin: auto;
-		margin-top: 20px;
-		width: 180px;
+		margin-top: 50px;
+		width: 50%;
+		outline: none;
+		border-radius: 50px;
+		border: 2px solid rgb(226, 55, 55);
+		text-decoration: none;
+		background: #fff;
 		text-transform: uppercase;
 		font-size: 0.9rem;
 		font-weight: 600;
@@ -843,6 +910,10 @@ nav ul li a:hover {
 	.project-btn:hover {
 		background: rgb(226, 55, 55);
 		color: #fff;
+	}
+
+	#tech {
+		margin-top: 30px;
 	}
 
 	.work-description {
@@ -857,40 +928,27 @@ nav ul li a:hover {
 		top: 0;
 		left: 0;
 		background: rgb(16, 25, 70);
-		display: none;
+		padding: 20px 0px;
 	}
 
 	.work-description p {
-		width: 50%;
-		font-size: 1rem;
+		width: 100%;
+		padding: 0px 20px;
+		font-size: 0.9rem;
 		margin-top: 50px;
 	}
 
-	.work-description a {
+	.work-links {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 20px;
-		margin: auto;
-		margin-top: 20px;
-		width: 40%;
-		outline: none;
-		border-radius: 50px;
-		border: 2px solid rgb(226, 55, 55);
-		text-decoration: none;
-		background: #fff;
-		text-transform: uppercase;
-		font-size: 0.8rem;
-		font-weight: 700;
-	}
-
-	.work-description a:hover {
-		background: rgb(226, 55, 55);
 		color: #fff;
+		width: 20%;
+		height: 100%;
+		justify-content: space-between;
+		margin-top: 20px;
 	}
 
-	.work-description a i {
-		margin-left: 20px;
+	.work-links a {
+		color: #fff;
 	}
 }
 /* end of project styles */
@@ -960,7 +1018,59 @@ nav ul li a:hover {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 30px;
+		padding: 20px;
+	}
+
+	.contact-details {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.contact-details > p {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact-details h1 {
+		margin-top: 20px;
+		text-transform: capitalize;
+		opacity: 1;
+		font-size: 2rem;
+	}
+
+	#info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		margin-top: 20px;
+		opacity: 0.8;
+	}
+
+	#mail {
+		margin-top: 20px;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #ff0000;
+		border-radius: 7px;
+		padding: 20px;
+		width: 50%;
+		color: #fff;
+		transition: 0.3s ease-out;
+	}
+
+	#mail:hover {
+		background: rgb(39, 39, 66);
 	}
 }
 /* end of contact us section */
