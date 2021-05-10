@@ -42,7 +42,6 @@ header {
 	align-items: center;
 	position: fixed;
 	z-index: 10;
-	background: #ff3c00;
 }
 
 .logo {
@@ -150,6 +149,9 @@ nav ul li a:hover {
 
 /* responsive header */
 @media screen and (max-width: 768px) {
+	header {
+		background: #ff3c00;
+	}
 	header nav {
 		position: absolute;
 		width: 80%;
