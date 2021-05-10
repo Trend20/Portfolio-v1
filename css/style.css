@@ -336,7 +336,7 @@ nav ul li a:hover {
 		margin-left: 30px;
 		margin-top: 20px;
 		width: 100%;
-		min-height: auto;
+		min-height: 50vh;
 	}
 
 	.intro hr {
@@ -388,6 +388,7 @@ nav ul li a:hover {
 		display: flex;
 		width: 100%;
 		padding: 30px;
+		margin-top: 50px;
 	}
 
 	.head {
