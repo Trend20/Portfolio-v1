@@ -178,9 +178,12 @@
                     </div>
                  </div>
             </div>
+
+            <div class="mini">
+                <h3> <b>Mini Projects</b></h3>
+            </div>
             <!-- end of main projects -->
             <div class="project-container">
-                <h1>Mini Projects</h1>
                 <div class="work">
                     <img src="./img/painta2.png" alt="painta">
                     
@@ -266,6 +269,19 @@
         <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-up"></i></button>
         <!-- end of chevron -->
 
+         <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <!-- inline script -->
+    
+    <!-- internal javascript -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
         <!-- MAIN JS -->
         <script src="./js/main.js"></script>
 </body>

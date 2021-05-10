@@ -40,6 +40,9 @@ header {
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed;
+	z-index: 10;
+	background: #ff3c00;
 }
 
 .logo {
@@ -147,6 +150,67 @@ nav ul li a:hover {
 
 /* responsive header */
 @media screen and (max-width: 768px) {
+	header nav {
+		/* display: none; */
+		position: absolute;
+		width: 80%;
+		height: 220px;
+		background: #fff;
+		left: -100%;
+		z-index: 99;
+		top: 120px;
+		margin: 0px 30px;
+		transition: 0.5s;
+		border: 2px solid rgb(228, 16, 16);
+	}
+	header nav.active {
+		left: 0;
+	}
+	header nav,
+	header nav ul {
+		display: block;
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	header nav ul li {
+		display: flex;
+		padding: 10px;
+	}
+	nav ul li a {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	.connect {
+		display: flex;
+		width: 100%;
+		margin-top: 80px;
+	}
+	.connect a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: rgb(12, 25, 54);
+	}
+	#request {
+		padding: 10px;
+		width: 40%;
+		border: 1px solid rgb(219, 43, 43);
+		color: rgb(219, 43, 43);
+		background: none;
+		outline: none;
+		border-radius: 50px;
+		font-size: 1rem;
+		font-weight: 700;
+		cursor: pointer;
+	}
+	.toggle {
+		display: block;
+		position: absolute;
+	}
+	.toggle i {
+		display: block;
+		font-size: 2rem;
+	}
 }
 
 /* end of header styles */
@@ -554,7 +618,6 @@ nav ul li a:hover {
 	margin-top: 20px;
 	padding: 30px;
 	background: #ff0000;
-	opacity: 0.5;
 	border-radius: 5px;
 }
 
@@ -624,6 +687,19 @@ nav ul li a:hover {
 	margin-right: -30px;
 }
 /* end of main projects */
+
+.mini {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.mini h3 {
+	font-size: 1rem !important;
+	font-weight: 900 !important;
+	text-transform: uppercase;
+}
 
 /* other projects */
 .project-container {
