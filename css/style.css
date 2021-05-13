@@ -411,7 +411,7 @@ nav ul li a:hover {
 		display: flex;
 		padding-top: 30px;
 		margin-left: 30px;
-		margin-top: 230px;
+		margin-top: 180px;
 		width: 100%;
 		min-height: 50vh;
 	}
@@ -421,6 +421,7 @@ nav ul li a:hover {
 		margin-left: 0;
 		opacity: 0.5;
 		border: 1px solid rgb(226, 55, 55);
+		display: none;
 	}
 
 	.intro h3 {
