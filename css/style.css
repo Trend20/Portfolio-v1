@@ -17,6 +17,9 @@ html {
 	scroll-behavior: smooth;
 }
 
+.nav-colored { background-color:#000; }
+/* .nav-transparent { background-color:#fff;} */
+
 body {
 	font-family: 'Poppins', sans-serif;
 	background: var(--backgroundColor);
@@ -50,7 +53,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background: rgb(226, 55, 55);
-	padding: 40px;
+	padding: 35px;
 	cursor: pointer;
 }
 
@@ -236,7 +239,7 @@ nav ul li a:hover {
 	padding-top: 200px;
 	margin-left: 200px;
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 250px;
 }
 
 .intro hr {
