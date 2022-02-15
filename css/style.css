@@ -393,6 +393,20 @@ nav ul li a:hover {
 #react {
   color: #50c6e4;
 }
+#angular {
+  color: #9c0d0d;
+}
+
+#typescript {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+#typescript img {
+  max-width: 60%;
+  border-radius: 3px;
+}
 #bootstrap {
   color: #4554a7;
 }
