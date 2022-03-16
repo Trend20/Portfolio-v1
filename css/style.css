@@ -777,6 +777,7 @@ nav ul li a:hover {
   outline: none;
   border-radius: 50px;
   border: 2px solid rgb(226, 55, 55);
+  transition: 1s;
   text-decoration: none;
   background: #fff;
   text-transform: uppercase;
@@ -1031,6 +1032,7 @@ nav ul li a:hover {
     border: 2px solid rgb(226, 55, 55);
     text-decoration: none;
     background: #fff;
+    transition: 1s;
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: 600;
