@@ -20,23 +20,6 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
 }
 
-
-
-// navbar background color
-// let myNavbar = document.getElementById('header');
-// window.onscroll = function () { 
-//     "use strict";
-//     if (document.body.scrollTop >= 200 ) {
-//         myNavbar.classList.add("nav-colored");
-//         myNavbar.classList.remove("nav-transparent");
-//     } 
-//     else {
-//         myNavbar.classList.add("nav-transparent");
-//         myNavbar.classList.remove("nav-colored");
-//     }
-// };
-
-
 // applying the active class
 const linkElements = document.getElementsByTagName('li');
 
